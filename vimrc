@@ -16,7 +16,7 @@
 
 " Pathogen (This must happen first.)
 " --------
-
+set encoding=utf-8
 filetype off                    " Avoid a Vim/Pathogen bug
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
@@ -29,6 +29,7 @@ filetype plugin indent on
 " Source initialization files
 " ---------------------------
 
+set t_Co=256
 runtime! init/**.vim
 
 

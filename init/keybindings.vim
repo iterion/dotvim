@@ -21,14 +21,7 @@ vmap <leader>s  :s/
 map <leader>v   :vsp<CR>
 
 " Move between screens
-map <leader>w   ^Ww
-map <leader>=   ^W=
-map <leader>j   ^Wj
-map <leader>k   ^Wk
-nmap <C-j>      <C-w>j
-nmap <C-k>      <C-w>k
-nmap <C-h>      <C-w>h
-nmap <C-l>      <C-w>l
+map <leader>w <C-w>
 
 " Open .vimrc file in new tab. Think Command + , [Preferences...] but with Shift.
 map <D-<>       :tabedit ~/.vimrc<CR>
@@ -69,30 +62,11 @@ map <M-D-Right> :bn<CR>
 vmap <tab> >gv
 vmap <s-tab> <gv
 
-" FuzzyFinder and switchback commands
-map <leader>e   :e#<CR>
-map <leader>b   :FufBuffer<CR>
-map <leader><C-N> :FufFile **/<CR>
-map <D-e> :FufBuffer<CR>
-map <leader>n :FufFile **/<CR>
-map <D-N> :FufFile **/<CR>
-
-" refresh the FuzzyFinder cache
-map <leader>rf :FufRenewCache<CR>
-
-" Command-T
-map <D-N>       :CommandTFlush<CR>:CommandT<CR>
-map <leader>f   :CommandTFlush<CR>:CommandT<CR>
-
-" ctags with rails load path
-map <leader>rt  :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs /usr/local/bin/ctags -R public/javascripts<CR>
-map <leader>T   :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs rdoc -f tags<CR>
-
 " Git blame
 map <leader>g   :Gblame<CR>
 
 " Comment/uncomment lines
-map <leader>/   <plug>NERDCommenterToggle
+map <leader>/   <plug>TComment
 map <D-/>       <plug>NERDCommenterToggle
 imap <D-/>      <Esc><plug>NERDCommenterToggle i
 
@@ -108,14 +82,6 @@ map <MiddleMouse>   <Nop>
 imap <MiddleMouse>  <Nop>
 map <F1>            <Nop>
 imap <F1>           <Nop>
-
-" Easy access to the shell
-map <Leader><Leader> :!
-
-" AckGrep current word
-map <leader>a :call AckGrep()<CR>
-" AckVisual current selection
-vmap <leader>a :call AckVisual()<CR>
 
 " Recalculate diff when it gets messed up.
 nmap du :diffupdate<CR>

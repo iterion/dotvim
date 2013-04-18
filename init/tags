@@ -1,0 +1,81 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+<C-A>	keybindings.vim	/^cmap <C-A> <C-B>$/;"	m
+<C-e>	keybindings.vim	/^nnoremap <C-e>  3<C-e>$/;"	m
+<C-y>	keybindings.vim	/^nnoremap <C-y>  3<C-y>$/;"	m
+<D-/>	keybindings.vim	/^imap <D-\/>      <Esc><plug>NERDCommenterToggle i$/;"	m
+<D-/>	keybindings.vim	/^map <D-\/>       <plug>NERDCommenterToggle$/;"	m
+<D-<>	keybindings.vim	/^map <D-<>       :tabedit ~\/.vimrc<CR>$/;"	m
+<D-C>	keybindings.vim	/^map <silent> <D-C> :let @* = expand("%")<CR>:echo "Copied: ".expand("%")<CR>$/;"	m
+<D-CR>	keybindings.vim	/^imap <D-CR>     <Esc>o$/;"	m
+<D-Z>	keybindings.vim	/^map <D-Z>       :later 1<CR>$/;"	m
+<D-z>	keybindings.vim	/^map <D-z>       :earlier 1<CR>$/;"	m
+<Esc>[A	terminal.vim	/^  map <Esc>[A <Up>$/;"	m
+<F12>	terminal.vim	/^  map <F12> :w<CR>$/;"	m
+<F12>	terminal.vim	/^  map! <F12> <C-o>:w<CR>$/;"	m
+<F1>	keybindings.vim	/^imap <F1>           <Nop>$/;"	m
+<F1>	keybindings.vim	/^map <F1>            <Nop>$/;"	m
+<F7>	keybindings.vim	/^map <silent> <F7> gg=G``:echo "Reformatted."<CR>$/;"	m
+<Leader>ct	ctags.vim	/^map <Leader>ct :!ctags -R .<CR>$/;"	m
+<M-D-Down>	keybindings.vim	/^map <M-D-Down>  :cn<CR>$/;"	m
+<M-D-Left>	keybindings.vim	/^map <M-D-Left>  :bp<CR>$/;"	m
+<M-D-Right>	keybindings.vim	/^map <M-D-Right> :bn<CR>$/;"	m
+<M-D-Up>	keybindings.vim	/^map <M-D-Up>    :cp<CR>$/;"	m
+<MiddleMouse>	keybindings.vim	/^imap <MiddleMouse>  <Nop>$/;"	m
+<MiddleMouse>	keybindings.vim	/^map <MiddleMouse>   <Nop>$/;"	m
+<Space>	options.vim	/^nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>""$/;"	m
+<Tab>	ctags.vim	/^inoremap <Tab> <c-r>=InsertTabWrapper()<cr>$/;"	m
+<leader>/	keybindings.vim	/^map <leader>\/   <plug>NERDCommenterToggle$/;"	m
+<leader>=	keybindings.vim	/^nmap <leader>=  gg=G``$/;"	m
+<leader>C	keybindings.vim	/^map <leader>C :let @* = expand("%").":".line(".")<CR>:echo "Copied: ".expand("%").":".line(".")<CR>$/;"	m
+<leader>T	keybindings.vim	/^map <leader>T   :!rails runner 'puts $LOAD_PATH.join(" ")' \\| xargs rdoc -f tags<CR>$/;"	m
+<leader>a	keybindings.vim	/^map <leader>a :call AckGrep()<CR>$/;"	m
+<leader>a	keybindings.vim	/^vmap <leader>a :call AckVisual()<CR>$/;"	m
+<leader>g	keybindings.vim	/^map <leader>g   :Gblame<CR>$/;"	m
+<leader>rt	keybindings.vim	/^map <leader>rt  :!rails runner 'puts $LOAD_PATH.join(" ")' \\| xargs \/usr\/local\/bin\/ctags -R public\/javascripts<CR>$/;"	m
+<leader>rv	keybindings.vim	/^map <leader>rv  :source ~\/.vimrc<CR>$/;"	m
+<leader>s	keybindings.vim	/^nmap <leader>s  :%s\/$/;"	m
+<leader>s	keybindings.vim	/^vmap <leader>s  :s\/$/;"	m
+<leader>u	keybindings.vim	/^map <leader>u :GundoToggle<CR>$/;"	m
+<leader>v	keybindings.vim	/^map <leader>v   :vsp<CR>$/;"	m
+<leader>w	keybindings.vim	/^map <leader>w <C-w>$/;"	m
+<s-tab>	keybindings.vim	/^vmap <s-tab> <gv$/;"	m
+<tab>	keybindings.vim	/^vmap <tab> >gv$/;"	m
+AckGrep	ack.vim	/^function! AckGrep()$/;"	f
+AckVisual	ack.vim	/^function! AckVisual()$/;"	f
+CucumberFindUnusedSteps	cucumber.vim	/^command! CucumberFindUnusedSteps :call CucumberFindUnusedSteps()$/;"	c
+CucumberFindUnusedSteps	cucumber.vim	/^function! CucumberFindUnusedSteps()$/;"	f
+InsertTabWrapper	ctags.vim	/^function! InsertTabWrapper()$/;"	f
+MyTabLine	tabline.vim	/^    function! MyTabLine()$/;"	f
+NERDSpaceDelims	nerd_commenter.vim	/^let NERDSpaceDelims = 1$/;"	v
+RunFocusedTest	run_tests.vim	/^command! RunFocusedTest :call RunFocusedTest()$/;"	c
+RunFocusedTest	run_tests.vim	/^function! RunFocusedTest()$/;"	f
+RunTestTool	run_tests.vim	/^function! RunTestTool(tool_cmd)$/;"	f
+RunTests	run_tests.vim	/^command! RunTests :call RunTests()$/;"	c
+RunTests	run_tests.vim	/^function! RunTests()$/;"	f
+StripTrailingWhitespace	language.vim	/^function! StripTrailingWhitespace()$/;"	f
+Y	keybindings.vim	/^map Y           y\$$/;"	m
+\	keybindings.vim	/^map \\           :NERDTreeToggle<CR>$/;"	m
+\|	keybindings.vim	/^map \\|          :NERDTreeFind<CR>$/;"	m
+du	keybindings.vim	/^nmap du :diffupdate<CR>$/;"	m
+g:NERDTreeChDirMode	nerd_tree.vim	/^let g:NERDTreeChDirMode=2$/;"	v
+g:NERDTreeWinSize	nerd_tree.vim	/^let g:NERDTreeWinSize = 20$/;"	v
+g:Powerline_symbols	powerline.vim	/^let g:Powerline_symbols = 'fancy'$/;"	v
+g:ctrlp_dotfiles	ctrlp.vim	/^let g:ctrlp_dotfiles = 0$/;"	v
+g:ctrlp_map	ctrlp.vim	/^let g:ctrlp_map = '<Leader>t'$/;"	v
+g:ctrlp_match_window_reversed	ctrlp.vim	/^let g:ctrlp_match_window_reversed = 0$/;"	v
+g:ctrlp_working_path_mode	ctrlp.vim	/^let g:ctrlp_working_path_mode = 'r'$/;"	v
+g:gundo_close_on_revert	gundo.vim	/^let g:gundo_close_on_revert = 1$/;"	v
+g:solarized_termcolors	colorscheme.vim	/^  let g:solarized_termcolors=256$/;"	v
+g:syntastic_auto_loc_list	syntastic.vim	/^let g:syntastic_auto_loc_list=2$/;"	v
+g:syntastic_check_on_open	syntastic.vim	/^let g:syntastic_check_on_open=1$/;"	v
+g:syntastic_echo_current_error	syntastic.vim	/^let g:syntastic_echo_current_error=1$/;"	v
+g:syntastic_enable_signs	syntastic.vim	/^let g:syntastic_enable_signs=1$/;"	v
+jj	keybindings.vim	/^imap jj         <Esc>$/;"	m
+kj	keybindings.vim	/^imap kj         <Esc>$/;"	m
+mapleader	keybindings.vim	/^let mapleader = ","$/;"	v
+maplocalleader	keybindings.vim	/^let maplocalleader = ";"$/;"	v
