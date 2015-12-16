@@ -8,12 +8,12 @@ set encoding=utf-8
 set nocompatible                " Don't maintain compatibility with vi
 filetype off                    " Avoid a Vim/Pathogen bug
 
-set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 
 Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-easymotion'
@@ -68,6 +68,7 @@ Bundle 'nelstrom/vim-textobj-rubyblock'
 
 Bundle 'bkad/vim-terraform'
 
+call vundle#end()
 
 syntax on                       " Highlight known syntaxes
 filetype plugin indent on
