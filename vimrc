@@ -74,6 +74,14 @@ syntax on                       " Highlight known syntaxes
 filetype plugin indent on
 set clipboard=unnamed
 
+set backup
+set noswapfile
+
+set undodir=~/.vim/tmp/undo//     " undo files
+set backupdir=~/.vim/tmp/backup// " backups
+set directory=~/.vim/tmp/swap//   " swap files
+
+
 
 " Source initialization files
 " ---------------------------
